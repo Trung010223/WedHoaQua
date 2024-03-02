@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      table {
+        display: none; /* Ẩn bảng ban đầu */
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      img:hover + table {
+        display: table; /* Hiển thị bảng khi di chuột vào hình ảnh */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="your-image.jpg" />
+      <table>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+        </tr>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
